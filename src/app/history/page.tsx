@@ -42,7 +42,7 @@ export default async function HistoryPage() {
             <HistoryChart
               key={service.name}
               name={service.name}
-              data={history[service.name.toLowerCase().replace(/\s+/g, '-')] || []}
+              data={(history[service.name.toLowerCase().replace(/\s+/g, '-')] as import('@/lib/history').HistoryEntry[] | undefined) || []}
             />
           ))}
         </div>

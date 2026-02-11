@@ -21,8 +21,12 @@ export interface Incident {
 }
 
 export interface History {
-  [serviceName: string]: HistoryEntry[];
+  api?: HistoryEntry[];
+  dashboard?: HistoryEntry[];
+  website?: HistoryEntry[];
+  'auth-service'?: HistoryEntry[];
   incidents?: Incident[];
+  [key: string]: HistoryEntry[] | Incident[] | undefined;
 }
 
 // Default history data (simulated for demo)
