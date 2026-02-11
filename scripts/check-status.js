@@ -171,8 +171,41 @@ async function main() {
     JSON.stringify(summary, null, 2)
   );
 
+  // Generate combined history.json for the frontend
+  const combinedHistory = {
+    'api': [],
+    'dashboard': [],
+    'website': [],
+    'auth-service': [],
+    'incidents': []  // Real incidents only - add manually when they occur
+  };
+
+  // Read each service's history file
+  for (const site of config.sites) {
+    const slug = site.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const historyFile = path.join(HISTORY_DIR, `${slug}.json`);
+
+    if (fs.existsSync(historyFile)) {
+      const history = JSON.parse(fs.readFileSync(historyFile, 'utf8'));
+      // Get last 24 hours of data for charts (288 entries at 5-min intervals)
+      combinedHistory[slug] = history.slice(-288);
+    }
+  }
+
+  // Check if incidents.json exists and merge it
+  const incidentsFile = path.join(HISTORY_DIR, 'incidents.json');
+  if (fs.existsSync(incidentsFile)) {
+    combinedHistory.incidents = JSON.parse(fs.readFileSync(incidentsFile, 'utf8'));
+  }
+
+  fs.writeFileSync(
+    path.join(HISTORY_DIR, 'history.json'),
+    JSON.stringify(combinedHistory, null, 2)
+  );
+
   console.log(`\n📊 Overall status: ${summary.overall}`);
   console.log(`📁 Updated ${API_DIR}/status.json`);
+  console.log(`📁 Updated ${HISTORY_DIR}/history.json`);
 }
 
 main().catch(console.error);
