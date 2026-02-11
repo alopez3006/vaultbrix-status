@@ -1,0 +1,55 @@
+{
+  "api": [],
+  "dashboard": [],
+  "website": [],
+  "auth-service": [],
+  "incidents": [
+    {
+      "id": "inc-001",
+      "title": "Elevated API Response Times",
+      "service": "API",
+      "status": "resolved",
+      "severity": "minor",
+      "createdAt": "2026-02-08T14:30:00Z",
+      "resolvedAt": "2026-02-08T15:15:00Z",
+      "updates": [
+        {
+          "timestamp": "2026-02-08T14:30:00Z",
+          "status": "investigating",
+          "message": "We are investigating reports of slow API responses."
+        },
+        {
+          "timestamp": "2026-02-08T14:45:00Z",
+          "status": "identified",
+          "message": "The issue has been identified as a database connection pool exhaustion."
+        },
+        {
+          "timestamp": "2026-02-08T15:15:00Z",
+          "status": "resolved",
+          "message": "The issue has been resolved. Connection pool limits have been increased."
+        }
+      ]
+    },
+    {
+      "id": "inc-002",
+      "title": "Scheduled Maintenance",
+      "service": "All Services",
+      "status": "resolved",
+      "severity": "minor",
+      "createdAt": "2026-02-05T02:00:00Z",
+      "resolvedAt": "2026-02-05T02:30:00Z",
+      "updates": [
+        {
+          "timestamp": "2026-02-05T02:00:00Z",
+          "status": "monitoring",
+          "message": "Scheduled maintenance has begun. Some services may be briefly unavailable."
+        },
+        {
+          "timestamp": "2026-02-05T02:30:00Z",
+          "status": "resolved",
+          "message": "Maintenance completed successfully. All services are operational."
+        }
+      ]
+    }
+  ]
+}
