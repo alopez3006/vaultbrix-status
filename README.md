@@ -94,6 +94,43 @@ vaultbrix-status/
 | Degraded | Yellow | Partial outage or slow |
 | Down | Red | Service unavailable |
 
+## Uptime Bar
+
+The 90-day uptime bar shows daily status for each service:
+
+- **Green**: 99%+ uptime that day
+- **Yellow**: 90-99% uptime (degraded)
+- **Red**: <90% uptime (down)
+- **Gray**: No monitoring data available
+
+### How It Works
+
+1. **Default state**: All bars show green (operational) before monitoring data exists
+2. **Real data**: When `check-status.js` runs, it saves entries to `history/{service}.json`
+3. **Aggregation**: Daily uptime is calculated from 5-minute checks (288 checks/day max)
+
+### Data Flow
+
+```
+check-status.js (every 5 min)
+       │
+       ▼
+history/api.json, history/dashboard.json, etc.
+       │
+       ▼
+UptimeBar component (aggregates daily status)
+       │
+       ▼
+90 colored bars (oldest → newest, left → right)
+```
+
+### Manual Check
+
+```bash
+# Run a single status check and update history
+node scripts/check-status.js
+```
+
 ## License
 
 MIT - Vaultbrix 2026
