@@ -1,18 +1,24 @@
 'use client';
 
-interface UptimeBarProps {
-  uptime: number;
+export interface DayStatus {
+  date: string;
+  status: 'up' | 'down' | 'degraded' | 'no-data';
 }
 
-export function UptimeBar({ uptime }: UptimeBarProps) {
+interface UptimeBarProps {
+  uptime: number;
+  dailyHistory?: DayStatus[];
+}
+
+export function UptimeBar({ uptime, dailyHistory }: UptimeBarProps) {
   // Generate 90 segments (one per day)
+  // Use real history if provided, otherwise default to 'up' (green)
   const segments = Array.from({ length: 90 }, (_, i) => {
-    // Simulate historical data based on uptime percentage
-    // In production, this would come from actual history
-    const random = Math.random() * 100;
-    if (random < uptime - 1) return 'up';
-    if (random < uptime) return 'degraded';
-    return uptime > 95 ? 'up' : 'down';
+    if (dailyHistory && dailyHistory[i]) {
+      return dailyHistory[i].status;
+    }
+    // Default: show green (up) for days without real data
+    return 'up';
   });
 
   return (
