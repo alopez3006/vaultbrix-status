@@ -14,6 +14,9 @@ sites:
   - name: Dashboard
     url: https://app.vaultbrix.com
     icon: https://vaultbrix.com/brand/icons/icon-master.png
+    expectedStatusCodes:
+      - 200
+      - 307  # Redirects to login
 
   - name: Website
     url: https://vaultbrix.com
