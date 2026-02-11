@@ -1,0 +1,69 @@
+# Vaultbrix Status Page Configuration
+# =====================================
+# Upptime-style monitoring configuration
+
+owner: alopez3006
+repo: vaultbrix-status
+
+# Sites to monitor
+sites:
+  - name: API
+    url: https://api.vaultbrix.com/health
+    icon: https://vaultbrix.com/brand/icons/icon-master.png
+
+  - name: Dashboard
+    url: https://app.vaultbrix.com
+    icon: https://vaultbrix.com/brand/icons/icon-master.png
+
+  - name: Website
+    url: https://vaultbrix.com
+    icon: https://vaultbrix.com/brand/icons/icon-master.png
+
+  - name: Auth Service
+    url: https://api.vaultbrix.com/v1/auth/health
+    expectedStatusCodes:
+      - 200
+      - 401  # Auth endpoint may return 401 without token
+
+# Status website configuration
+status-website:
+  cname: status.vaultbrix.com
+  baseUrl: /
+  name: Vaultbrix Status
+  introTitle: "**Vaultbrix** System Status"
+  introMessage: Real-time monitoring of Vaultbrix services. All times in UTC.
+  navbar:
+    - title: Status
+      href: /
+    - title: History
+      href: /history
+    - title: Vaultbrix
+      href: https://vaultbrix.com
+
+# Assignees for incidents
+assignees:
+  - alopez3006
+
+# Commit messages
+commitMessages:
+  statusChange: "🔄 $SITE_NAME is $STATUS"
+  incidentOpen: "🚨 Incident: $SITE_NAME is down"
+  incidentClose: "✅ Resolved: $SITE_NAME is back up"
+
+# Internationalization
+i18n:
+  activeIncidents: Active Incidents
+  allSystemsOperational: All Systems Operational
+  incidentReport: Incident Report for $SITE_NAME
+  pastIncidents: Past Incidents
+  pastIncidentsResolved: Resolved in $MINUTES minutes
+  liveStatus: Live Status
+  overallUptime: Overall Uptime
+  day: day
+  days: days
+  hour: hour
+  hours: hours
+  minute: minute
+  minutes: minutes
+  second: second
+  seconds: seconds
