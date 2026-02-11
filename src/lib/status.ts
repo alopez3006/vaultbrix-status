@@ -59,22 +59,13 @@ const defaultStatus: Status = {
 };
 
 export async function getStatus(): Promise<Status> {
+  // Import status data at build time
+  // This file is updated by GitHub Actions every 5 minutes
   try {
-    // In production, this would fetch from the API
-    // For static export, we use the generated JSON
-    const fs = await import('fs');
-    const path = await import('path');
-
-    const apiFile = path.join(process.cwd(), 'api', 'status.json');
-
-    if (fs.existsSync(apiFile)) {
-      const data = fs.readFileSync(apiFile, 'utf8');
-      return JSON.parse(data);
-    }
-  } catch (error) {
-    // Fallback to default status
-    console.log('Using default status data');
+    const statusData = await import('../../api/status.json');
+    return statusData as unknown as Status;
+  } catch {
+    // Fallback to default status if file doesn't exist
+    return defaultStatus;
   }
-
-  return defaultStatus;
 }

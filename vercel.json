@@ -1,8 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "outputDirectory": "out",
   "headers": [
     {
       "source": "/api/(.*)",
@@ -11,8 +9,5 @@
         { "key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=300" }
       ]
     }
-  ],
-  "rewrites": [
-    { "source": "/api/status.json", "destination": "/api/status.json" }
   ]
 }
