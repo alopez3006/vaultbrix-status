@@ -131,6 +131,92 @@ UptimeBar component (aggregates daily status)
 node scripts/check-status.js
 ```
 
+## Automatic Incident Management
+
+Incidents are **automatically created and resolved** based on service status changes.
+
+### How It Works
+
+```
+Service UP → DOWN    →  🚨 New incident created (status: investigating)
+Service DOWN         →  📊 Update added every 30 min (status: monitoring)
+Service DOWN → UP    →  ✅ Incident resolved automatically
+```
+
+### Incident Lifecycle
+
+| Transition | Action | Status |
+|------------|--------|--------|
+| `up → down` | Create new incident | `investigating` |
+| `down → down` (30+ min) | Add update | `monitoring` |
+| `down → up` | Resolve incident | `resolved` |
+
+### Data Storage
+
+- **Active incidents**: `history/incidents.json`
+- **Combined history**: `history/history.json` (includes incidents)
+- **Retention**: Last 50 incidents kept
+
+### Incident Schema
+
+```json
+{
+  "id": "inc-1707660000000",
+  "title": "API is experiencing issues",
+  "service": "API",
+  "status": "investigating",
+  "severity": "major",
+  "createdAt": "2026-02-11T15:00:00.000Z",
+  "resolvedAt": null,
+  "updates": [
+    {
+      "timestamp": "2026-02-11T15:00:00.000Z",
+      "status": "investigating",
+      "message": "API is not responding as expected. Our team is investigating."
+    }
+  ]
+}
+```
+
+### Manual Incidents
+
+To add a custom incident (e.g., scheduled maintenance):
+
+```bash
+# Edit history/incidents.json
+[
+  {
+    "id": "inc-maintenance-001",
+    "title": "Scheduled Maintenance",
+    "service": "All Services",
+    "status": "resolved",
+    "severity": "minor",
+    "createdAt": "2026-02-15T02:00:00Z",
+    "resolvedAt": "2026-02-15T02:30:00Z",
+    "updates": [
+      {
+        "timestamp": "2026-02-15T02:00:00Z",
+        "status": "monitoring",
+        "message": "Scheduled maintenance in progress."
+      },
+      {
+        "timestamp": "2026-02-15T02:30:00Z",
+        "status": "resolved",
+        "message": "Maintenance completed successfully."
+      }
+    ]
+  }
+]
+```
+
+### Severity Levels
+
+| Severity | Use Case |
+|----------|----------|
+| `minor` | Scheduled maintenance, brief slowdowns |
+| `major` | Service down, significant degradation |
+| `critical` | Multiple services down, data loss risk |
+
 ## License
 
 MIT - Vaultbrix 2026
