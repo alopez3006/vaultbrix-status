@@ -13,6 +13,7 @@ const yaml = require('yaml');
 const CONFIG_FILE = path.join(__dirname, '..', 'upptime.yml');
 const HISTORY_DIR = path.join(__dirname, '..', 'history');
 const API_DIR = path.join(__dirname, '..', 'api');
+const INCIDENTS_FILE = path.join(HISTORY_DIR, 'incidents.json');
 
 // Ensure directories exist
 [HISTORY_DIR, API_DIR].forEach(dir => {
@@ -21,6 +22,107 @@ const API_DIR = path.join(__dirname, '..', 'api');
 
 // Load configuration
 const config = yaml.parse(fs.readFileSync(CONFIG_FILE, 'utf8'));
+
+/**
+ * Load current incidents
+ */
+function loadIncidents() {
+  if (fs.existsSync(INCIDENTS_FILE)) {
+    return JSON.parse(fs.readFileSync(INCIDENTS_FILE, 'utf8'));
+  }
+  return [];
+}
+
+/**
+ * Save incidents
+ */
+function saveIncidents(incidents) {
+  fs.writeFileSync(INCIDENTS_FILE, JSON.stringify(incidents, null, 2));
+}
+
+/**
+ * Get the previous status for a service
+ */
+function getPreviousStatus(siteName) {
+  const slug = siteName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const historyFile = path.join(HISTORY_DIR, `${slug}.json`);
+
+  if (fs.existsSync(historyFile)) {
+    const history = JSON.parse(fs.readFileSync(historyFile, 'utf8'));
+    if (history.length > 0) {
+      return history[history.length - 1].status;
+    }
+  }
+  return 'up'; // Assume up if no history
+}
+
+/**
+ * Handle incident creation/updates
+ */
+function handleIncident(siteName, currentStatus, previousStatus, responseTime) {
+  const incidents = loadIncidents();
+  const now = new Date().toISOString();
+
+  // Find active incident for this service
+  const activeIncidentIndex = incidents.findIndex(
+    inc => inc.service === siteName && inc.status !== 'resolved'
+  );
+
+  if (currentStatus === 'down' && previousStatus === 'up') {
+    // Service just went down - create new incident
+    const newIncident = {
+      id: `inc-${Date.now()}`,
+      title: `${siteName} is experiencing issues`,
+      service: siteName,
+      status: 'investigating',
+      severity: 'major',
+      createdAt: now,
+      updates: [
+        {
+          timestamp: now,
+          status: 'investigating',
+          message: `${siteName} is not responding as expected. Our team is investigating.`
+        }
+      ]
+    };
+    incidents.unshift(newIncident); // Add to beginning
+    console.log(`🚨 Created incident for ${siteName}`);
+
+  } else if (currentStatus === 'down' && activeIncidentIndex !== -1) {
+    // Service still down - update incident
+    const incident = incidents[activeIncidentIndex];
+    const lastUpdate = incident.updates[incident.updates.length - 1];
+
+    // Only add update if status changed or every 30 minutes
+    const lastUpdateTime = new Date(lastUpdate.timestamp).getTime();
+    const timeSinceLastUpdate = Date.now() - lastUpdateTime;
+
+    if (timeSinceLastUpdate > 30 * 60 * 1000) { // 30 minutes
+      incident.updates.push({
+        timestamp: now,
+        status: 'monitoring',
+        message: `Still monitoring. Response time: ${responseTime}ms`
+      });
+      incident.status = 'monitoring';
+    }
+
+  } else if (currentStatus === 'up' && activeIncidentIndex !== -1) {
+    // Service recovered - resolve incident
+    const incident = incidents[activeIncidentIndex];
+    incident.status = 'resolved';
+    incident.resolvedAt = now;
+    incident.updates.push({
+      timestamp: now,
+      status: 'resolved',
+      message: `${siteName} is back online and operating normally.`
+    });
+    console.log(`✅ Resolved incident for ${siteName}`);
+  }
+
+  // Keep only last 50 incidents
+  const trimmedIncidents = incidents.slice(0, 50);
+  saveIncidents(trimmedIncidents);
+}
 
 /**
  * Check a single endpoint
@@ -135,12 +237,16 @@ async function main() {
   };
 
   for (const site of config.sites) {
+    const previousStatus = getPreviousStatus(site.name);
     const result = await checkEndpoint(site);
     results.push(result);
 
     const history = updateHistory(site.name, result);
     const uptime = calculateUptime(history);
     const avgResponseTime = calculateAvgResponseTime(history);
+
+    // Handle automatic incident creation/resolution
+    handleIncident(site.name, result.status, previousStatus, result.responseTime);
 
     const statusIcon = result.status === 'up' ? '✅' : '❌';
     console.log(`${statusIcon} ${site.name}: ${result.status} (${result.responseTime}ms)`);
