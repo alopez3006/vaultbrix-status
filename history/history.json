@@ -143,6 +143,12 @@
       "status": "up",
       "code": 200,
       "responseTime": 1039
+    },
+    {
+      "timestamp": "2026-02-12T14:37:45.718Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 550
     }
   ],
   "dashboard": [
@@ -277,6 +283,12 @@
       "status": "up",
       "code": 307,
       "responseTime": 1132
+    },
+    {
+      "timestamp": "2026-02-12T14:37:46.190Z",
+      "status": "up",
+      "code": 307,
+      "responseTime": 471
     }
   ],
   "website": [
@@ -423,6 +435,12 @@
       "status": "up",
       "code": 302,
       "responseTime": 873
+    },
+    {
+      "timestamp": "2026-02-12T14:37:46.620Z",
+      "status": "down",
+      "code": 0,
+      "responseTime": 429
     }
   ],
   "auth-service": [
@@ -569,7 +587,29 @@
       "status": "up",
       "code": 401,
       "responseTime": 425
+    },
+    {
+      "timestamp": "2026-02-12T14:37:47.013Z",
+      "status": "up",
+      "code": 401,
+      "responseTime": 392
     }
   ],
-  "incidents": []
+  "incidents": [
+    {
+      "id": "inc-1770907066620",
+      "title": "Website is experiencing issues",
+      "service": "Website",
+      "status": "investigating",
+      "severity": "major",
+      "createdAt": "2026-02-12T14:37:46.620Z",
+      "updates": [
+        {
+          "timestamp": "2026-02-12T14:37:46.620Z",
+          "status": "investigating",
+          "message": "Website is not responding as expected. Our team is investigating."
+        }
+      ]
+    }
+  ]
 }
