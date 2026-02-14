@@ -430,5 +430,11 @@
     "status": "up",
     "code": 200,
     "responseTime": 696
+  },
+  {
+    "timestamp": "2026-02-14T10:42:55.861Z",
+    "status": "up",
+    "code": 200,
+    "responseTime": 500
   }
 ]
