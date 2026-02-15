@@ -760,5 +760,11 @@
     "status": "up",
     "code": 200,
     "responseTime": 948
+  },
+  {
+    "timestamp": "2026-02-15T21:42:49.028Z",
+    "status": "down",
+    "code": 401,
+    "responseTime": 634
   }
 ]

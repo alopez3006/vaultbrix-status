@@ -1,5 +1,20 @@
 [
   {
+    "id": "inc-1771191769030",
+    "title": "API is experiencing issues",
+    "service": "API",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-02-15T21:42:49.030Z",
+    "updates": [
+      {
+        "timestamp": "2026-02-15T21:42:49.030Z",
+        "status": "investigating",
+        "message": "API is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
     "id": "inc-1771173675026",
     "title": "Website is experiencing issues",
     "service": "Website",
