@@ -3,7 +3,7 @@
     "id": "inc-1771191769030",
     "title": "API is experiencing issues",
     "service": "API",
-    "status": "investigating",
+    "status": "monitoring",
     "severity": "major",
     "createdAt": "2026-02-15T21:42:49.030Z",
     "updates": [
@@ -11,6 +11,11 @@
         "timestamp": "2026-02-15T21:42:49.030Z",
         "status": "investigating",
         "message": "API is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-02-15T22:39:05.556Z",
+        "status": "monitoring",
+        "message": "Still monitoring. Response time: 1021ms"
       }
     ]
   },

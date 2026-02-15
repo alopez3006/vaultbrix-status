@@ -773,6 +773,12 @@
       "status": "down",
       "code": 401,
       "responseTime": 537
+    },
+    {
+      "timestamp": "2026-02-15T22:39:05.555Z",
+      "status": "down",
+      "code": 401,
+      "responseTime": 1021
     }
   ],
   "dashboard": [
@@ -1537,6 +1543,12 @@
       "status": "up",
       "code": 307,
       "responseTime": 475
+    },
+    {
+      "timestamp": "2026-02-15T22:39:06.089Z",
+      "status": "up",
+      "code": 307,
+      "responseTime": 533
     }
   ],
   "website": [
@@ -2313,6 +2325,12 @@
       "status": "up",
       "code": 200,
       "responseTime": 446
+    },
+    {
+      "timestamp": "2026-02-15T22:39:06.614Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 524
     }
   ],
   "auth-service": [
@@ -3089,6 +3107,12 @@
       "status": "up",
       "code": 401,
       "responseTime": 534
+    },
+    {
+      "timestamp": "2026-02-15T22:39:07.111Z",
+      "status": "up",
+      "code": 401,
+      "responseTime": 496
     }
   ],
   "incidents": [
@@ -3096,7 +3120,7 @@
       "id": "inc-1771191769030",
       "title": "API is experiencing issues",
       "service": "API",
-      "status": "investigating",
+      "status": "monitoring",
       "severity": "major",
       "createdAt": "2026-02-15T21:42:49.030Z",
       "updates": [
@@ -3104,6 +3128,11 @@
           "timestamp": "2026-02-15T21:42:49.030Z",
           "status": "investigating",
           "message": "API is not responding as expected. Our team is investigating."
+        },
+        {
+          "timestamp": "2026-02-15T22:39:05.556Z",
+          "status": "monitoring",
+          "message": "Still monitoring. Response time: 1021ms"
         }
       ]
     },
