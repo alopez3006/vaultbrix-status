@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T10:01:02.721Z",
+  "lastUpdated": "2026-02-15T10:43:43.458Z",
   "overall": "up",
   "services": [
     {
@@ -7,7 +7,7 @@
       "url": "https://api.vaultbrix.com/health",
       "status": "up",
       "code": 200,
-      "responseTime": 559,
+      "responseTime": 732,
       "uptime": 100,
       "avgResponseTime": 766
     },
@@ -16,25 +16,25 @@
       "url": "https://app.vaultbrix.com",
       "status": "up",
       "code": 307,
-      "responseTime": 506,
+      "responseTime": 817,
       "uptime": 100,
-      "avgResponseTime": 750
+      "avgResponseTime": 751
     },
     {
       "name": "Website",
       "url": "https://vaultbrix.com",
       "status": "up",
       "code": 302,
-      "responseTime": 429,
-      "uptime": 98.13,
-      "avgResponseTime": 665
+      "responseTime": 949,
+      "uptime": 98.15,
+      "avgResponseTime": 667
     },
     {
       "name": "Auth Service",
       "url": "https://api.vaultbrix.com/v1/auth/health",
       "status": "up",
       "code": 401,
-      "responseTime": 490,
+      "responseTime": 644,
       "uptime": 100,
       "avgResponseTime": 599
     }
