@@ -21,9 +21,9 @@ export default function RootLayout({
           <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="https://vaultbrix.com/brand/icons/icon-master.png"
+                src="/icon.svg"
                 alt="Vaultbrix"
-                className="w-8 h-8 rounded"
+                className="w-8 h-8"
               />
               <span className="font-semibold text-lg">Vaultbrix Status</span>
             </div>

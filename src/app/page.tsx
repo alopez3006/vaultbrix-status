@@ -24,7 +24,7 @@ export default async function StatusPage() {
           This page displays the current operational status of Vaultbrix services.
           We monitor our endpoints every 5 minutes and display the results here.
           If you're experiencing issues not reflected on this page, please contact
-          support at <a href="mailto:support@vaultbrix.com" className="text-emerald-400 hover:underline">support@vaultbrix.com</a>.
+          support at <a href="mailto:support@starbox-group.com" className="text-emerald-400 hover:underline">support@starbox-group.com</a>.
         </p>
       </div>
     </div>
