@@ -844,5 +844,11 @@
     "status": "up",
     "code": 401,
     "responseTime": 808
+  },
+  {
+    "timestamp": "2026-02-16T11:25:49.019Z",
+    "status": "up",
+    "code": 401,
+    "responseTime": 500
   }
 ]
