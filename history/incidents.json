@@ -3,7 +3,7 @@
     "id": "inc-1771191769030",
     "title": "API is experiencing issues",
     "service": "API",
-    "status": "monitoring",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-02-15T21:42:49.030Z",
     "updates": [
@@ -21,8 +21,14 @@
         "timestamp": "2026-02-15T23:38:29.894Z",
         "status": "monitoring",
         "message": "Still monitoring. Response time: 558ms"
+      },
+      {
+        "timestamp": "2026-02-16T00:19:57.434Z",
+        "status": "resolved",
+        "message": "API is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-02-16T00:19:57.434Z"
   },
   {
     "id": "inc-1771173675026",

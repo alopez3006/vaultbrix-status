@@ -797,6 +797,12 @@
       "status": "down",
       "code": 502,
       "responseTime": 669
+    },
+    {
+      "timestamp": "2026-02-16T00:19:57.433Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 53
     }
   ],
   "dashboard": [
@@ -1585,6 +1591,12 @@
       "status": "up",
       "code": 307,
       "responseTime": 798
+    },
+    {
+      "timestamp": "2026-02-16T00:19:57.477Z",
+      "status": "up",
+      "code": 307,
+      "responseTime": 43
     }
   ],
   "website": [
@@ -2385,6 +2397,12 @@
       "status": "up",
       "code": 200,
       "responseTime": 659
+    },
+    {
+      "timestamp": "2026-02-16T00:19:57.540Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 62
     }
   ],
   "auth-service": [
@@ -3185,6 +3203,12 @@
       "status": "up",
       "code": 401,
       "responseTime": 593
+    },
+    {
+      "timestamp": "2026-02-16T00:19:57.581Z",
+      "status": "up",
+      "code": 401,
+      "responseTime": 41
     }
   ],
   "incidents": [
@@ -3192,7 +3216,7 @@
       "id": "inc-1771191769030",
       "title": "API is experiencing issues",
       "service": "API",
-      "status": "monitoring",
+      "status": "resolved",
       "severity": "major",
       "createdAt": "2026-02-15T21:42:49.030Z",
       "updates": [
@@ -3210,8 +3234,14 @@
           "timestamp": "2026-02-15T23:38:29.894Z",
           "status": "monitoring",
           "message": "Still monitoring. Response time: 558ms"
+        },
+        {
+          "timestamp": "2026-02-16T00:19:57.434Z",
+          "status": "resolved",
+          "message": "API is back online and operating normally."
         }
-      ]
+      ],
+      "resolvedAt": "2026-02-16T00:19:57.434Z"
     },
     {
       "id": "inc-1771173675026",
