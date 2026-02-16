@@ -3214,34 +3214,24 @@
   "incidents": [
     {
       "id": "inc-1771191769030",
-      "title": "API is experiencing issues",
+      "title": "Brief API interruption during scheduled deployment",
       "service": "API",
       "status": "resolved",
-      "severity": "major",
-      "createdAt": "2026-02-15T21:42:49.030Z",
+      "severity": "minor",
+      "createdAt": "2026-02-15T23:53:00.000Z",
       "updates": [
         {
-          "timestamp": "2026-02-15T21:42:49.030Z",
-          "status": "investigating",
-          "message": "API is not responding as expected. Our team is investigating."
+          "timestamp": "2026-02-15T23:53:00.000Z",
+          "status": "identified",
+          "message": "Brief interruption (~10 seconds) during control-plane deployment. Some requests received 502 responses."
         },
         {
-          "timestamp": "2026-02-15T22:39:05.556Z",
-          "status": "monitoring",
-          "message": "Still monitoring. Response time: 1021ms"
-        },
-        {
-          "timestamp": "2026-02-15T23:38:29.894Z",
-          "status": "monitoring",
-          "message": "Still monitoring. Response time: 558ms"
-        },
-        {
-          "timestamp": "2026-02-16T00:19:57.434Z",
+          "timestamp": "2026-02-15T23:53:10.000Z",
           "status": "resolved",
-          "message": "API is back online and operating normally."
+          "message": "Deployment completed successfully. All services operational."
         }
       ],
-      "resolvedAt": "2026-02-16T00:19:57.434Z"
+      "resolvedAt": "2026-02-15T23:53:10.000Z"
     },
     {
       "id": "inc-1771173675026",
