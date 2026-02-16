@@ -869,6 +869,12 @@
       "status": "up",
       "code": 200,
       "responseTime": 531
+    },
+    {
+      "timestamp": "2026-02-16T15:23:16.404Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 739
     }
   ],
   "dashboard": [
@@ -1729,6 +1735,12 @@
       "status": "up",
       "code": 307,
       "responseTime": 591
+    },
+    {
+      "timestamp": "2026-02-16T15:23:16.967Z",
+      "status": "up",
+      "code": 307,
+      "responseTime": 561
     }
   ],
   "website": [
@@ -2601,6 +2613,12 @@
       "status": "up",
       "code": 200,
       "responseTime": 530
+    },
+    {
+      "timestamp": "2026-02-16T15:23:17.429Z",
+      "status": "down",
+      "code": 0,
+      "responseTime": 461
     }
   ],
   "auth-service": [
@@ -3473,9 +3491,30 @@
       "status": "up",
       "code": 401,
       "responseTime": 399
+    },
+    {
+      "timestamp": "2026-02-16T15:23:18.032Z",
+      "status": "up",
+      "code": 401,
+      "responseTime": 602
     }
   ],
   "incidents": [
+    {
+      "id": "inc-1771255397430",
+      "title": "Website is experiencing issues",
+      "service": "Website",
+      "status": "investigating",
+      "severity": "major",
+      "createdAt": "2026-02-16T15:23:17.430Z",
+      "updates": [
+        {
+          "timestamp": "2026-02-16T15:23:17.430Z",
+          "status": "investigating",
+          "message": "Website is not responding as expected. Our team is investigating."
+        }
+      ]
+    },
     {
       "id": "inc-1771191769030",
       "title": "Brief API interruption during scheduled deployment",
