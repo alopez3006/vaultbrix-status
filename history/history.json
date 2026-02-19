@@ -1295,6 +1295,12 @@
       "status": "up",
       "code": 200,
       "responseTime": 1234
+    },
+    {
+      "timestamp": "2026-02-19T14:16:10.336Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 464
     }
   ],
   "dashboard": [
@@ -2581,6 +2587,12 @@
       "status": "up",
       "code": 307,
       "responseTime": 721
+    },
+    {
+      "timestamp": "2026-02-19T14:16:10.870Z",
+      "status": "up",
+      "code": 307,
+      "responseTime": 532
     }
   ],
   "website": [
@@ -3879,6 +3891,12 @@
       "status": "up",
       "code": 200,
       "responseTime": 539
+    },
+    {
+      "timestamp": "2026-02-19T14:16:11.420Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 549
     }
   ],
   "auth-service": [
@@ -5177,6 +5195,12 @@
       "status": "up",
       "code": 401,
       "responseTime": 524
+    },
+    {
+      "timestamp": "2026-02-19T14:16:11.858Z",
+      "status": "up",
+      "code": 401,
+      "responseTime": 437
     }
   ],
   "incidents": [
