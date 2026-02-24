@@ -2164,5 +2164,11 @@
     "status": "up",
     "code": 200,
     "responseTime": 1138
+  },
+  {
+    "timestamp": "2026-02-24T11:08:44.033Z",
+    "status": "up",
+    "code": 200,
+    "responseTime": 500
   }
 ]
