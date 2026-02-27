@@ -3,7 +3,7 @@
     "id": "inc-1772224713567",
     "title": "Auth Service is experiencing issues",
     "service": "Auth Service",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-02-27T20:38:33.567Z",
     "updates": [
@@ -11,14 +11,20 @@
         "timestamp": "2026-02-27T20:38:33.567Z",
         "status": "investigating",
         "message": "Auth Service is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-02-27T21:01:41.654Z",
+        "status": "resolved",
+        "message": "Auth Service is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-02-27T21:01:41.654Z"
   },
   {
     "id": "inc-1772224711778",
     "title": "Dashboard is experiencing issues",
     "service": "Dashboard",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-02-27T20:38:31.778Z",
     "updates": [
@@ -26,8 +32,14 @@
         "timestamp": "2026-02-27T20:38:31.778Z",
         "status": "investigating",
         "message": "Dashboard is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-02-27T21:01:40.693Z",
+        "status": "resolved",
+        "message": "Dashboard is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-02-27T21:01:40.693Z"
   },
   {
     "id": "inc-1771269827456",
