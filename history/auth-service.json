@@ -2656,5 +2656,11 @@
     "status": "up",
     "code": 401,
     "responseTime": 456
+  },
+  {
+    "timestamp": "2026-02-27T20:38:33.566Z",
+    "status": "down",
+    "code": 502,
+    "responseTime": 590
   }
 ]

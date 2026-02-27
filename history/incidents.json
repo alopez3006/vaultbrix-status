@@ -1,5 +1,35 @@
 [
   {
+    "id": "inc-1772224713567",
+    "title": "Auth Service is experiencing issues",
+    "service": "Auth Service",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-02-27T20:38:33.567Z",
+    "updates": [
+      {
+        "timestamp": "2026-02-27T20:38:33.567Z",
+        "status": "investigating",
+        "message": "Auth Service is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
+    "id": "inc-1772224711778",
+    "title": "Dashboard is experiencing issues",
+    "service": "Dashboard",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-02-27T20:38:31.778Z",
+    "updates": [
+      {
+        "timestamp": "2026-02-27T20:38:31.778Z",
+        "status": "investigating",
+        "message": "Dashboard is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
     "id": "inc-1771269827456",
     "title": "Website is experiencing issues",
     "service": "Website",
