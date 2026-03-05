@@ -3730,5 +3730,11 @@
     "status": "up",
     "code": 401,
     "responseTime": 355
+  },
+  {
+    "timestamp": "2026-03-05T10:38:07.846Z",
+    "status": "up",
+    "code": 401,
+    "responseTime": 410
   }
 ]
