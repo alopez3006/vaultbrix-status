@@ -4336,5 +4336,11 @@
     "status": "up",
     "code": 307,
     "responseTime": 538
+  },
+  {
+    "timestamp": "2026-03-08T14:38:19.806Z",
+    "status": "down",
+    "code": 0,
+    "responseTime": 10000
   }
 ]

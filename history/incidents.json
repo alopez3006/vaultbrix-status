@@ -1,5 +1,20 @@
 [
   {
+    "id": "inc-1772980699808",
+    "title": "Dashboard is experiencing issues",
+    "service": "Dashboard",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-03-08T14:38:19.808Z",
+    "updates": [
+      {
+        "timestamp": "2026-03-08T14:38:19.808Z",
+        "status": "investigating",
+        "message": "Dashboard is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
     "id": "inc-1772380709052",
     "title": "Website is experiencing issues",
     "service": "Website",
