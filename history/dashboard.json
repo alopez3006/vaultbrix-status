@@ -5914,5 +5914,11 @@
     "status": "up",
     "code": 307,
     "responseTime": 462
+  },
+  {
+    "timestamp": "2026-03-13T14:05:01.805Z",
+    "status": "up",
+    "code": 307,
+    "responseTime": 403
   }
 ]
