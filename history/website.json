@@ -9166,5 +9166,11 @@
     "status": "up",
     "code": 301,
     "responseTime": 1007
+  },
+  {
+    "timestamp": "2026-03-22T10:47:17.329Z",
+    "status": "up",
+    "code": 301,
+    "responseTime": 605
   }
 ]
