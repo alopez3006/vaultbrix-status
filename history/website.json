@@ -9592,5 +9592,11 @@
     "status": "up",
     "code": 301,
     "responseTime": 423
+  },
+  {
+    "timestamp": "2026-03-23T12:58:11.760Z",
+    "status": "up",
+    "code": 301,
+    "responseTime": 500
   }
 ]
