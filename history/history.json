@@ -1,12 +1,6 @@
 {
   "api": [
     {
-      "timestamp": "2026-03-21T07:54:31.496Z",
-      "status": "up",
-      "code": 200,
-      "responseTime": 583
-    },
-    {
       "timestamp": "2026-03-21T08:11:43.677Z",
       "status": "up",
       "code": 200,
@@ -1727,15 +1721,15 @@
       "status": "up",
       "code": 200,
       "responseTime": 604
+    },
+    {
+      "timestamp": "2026-03-26T01:36:01.864Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 532
     }
   ],
   "dashboard": [
-    {
-      "timestamp": "2026-03-21T07:54:32.076Z",
-      "status": "up",
-      "code": 307,
-      "responseTime": 574
-    },
     {
       "timestamp": "2026-03-21T08:11:44.353Z",
       "status": "up",
@@ -3457,15 +3451,15 @@
       "status": "up",
       "code": 307,
       "responseTime": 746
+    },
+    {
+      "timestamp": "2026-03-26T01:36:02.315Z",
+      "status": "up",
+      "code": 307,
+      "responseTime": 445
     }
   ],
   "website": [
-    {
-      "timestamp": "2026-03-21T07:54:32.649Z",
-      "status": "up",
-      "code": 301,
-      "responseTime": 570
-    },
     {
       "timestamp": "2026-03-21T08:11:45.037Z",
       "status": "up",
@@ -5187,15 +5181,15 @@
       "status": "down",
       "code": 0,
       "responseTime": 653
+    },
+    {
+      "timestamp": "2026-03-26T01:36:02.742Z",
+      "status": "up",
+      "code": 301,
+      "responseTime": 423
     }
   ],
   "auth-service": [
-    {
-      "timestamp": "2026-03-21T07:54:33.106Z",
-      "status": "up",
-      "code": 401,
-      "responseTime": 454
-    },
     {
       "timestamp": "2026-03-21T08:11:45.684Z",
       "status": "up",
@@ -6917,6 +6911,12 @@
       "status": "up",
       "code": 401,
       "responseTime": 514
+    },
+    {
+      "timestamp": "2026-03-26T01:36:03.176Z",
+      "status": "up",
+      "code": 401,
+      "responseTime": 430
     }
   ],
   "incidents": [
@@ -6924,7 +6924,7 @@
       "id": "inc-1774486401634",
       "title": "Website is experiencing issues",
       "service": "Website",
-      "status": "investigating",
+      "status": "resolved",
       "severity": "major",
       "createdAt": "2026-03-26T00:53:21.634Z",
       "updates": [
@@ -6932,8 +6932,14 @@
           "timestamp": "2026-03-26T00:53:21.634Z",
           "status": "investigating",
           "message": "Website is not responding as expected. Our team is investigating."
+        },
+        {
+          "timestamp": "2026-03-26T01:36:02.744Z",
+          "status": "resolved",
+          "message": "Website is back online and operating normally."
         }
-      ]
+      ],
+      "resolvedAt": "2026-03-26T01:36:02.744Z"
     },
     {
       "id": "inc-1772980699808",

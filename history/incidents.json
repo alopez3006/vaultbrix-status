@@ -3,7 +3,7 @@
     "id": "inc-1774486401634",
     "title": "Website is experiencing issues",
     "service": "Website",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-03-26T00:53:21.634Z",
     "updates": [
@@ -11,8 +11,14 @@
         "timestamp": "2026-03-26T00:53:21.634Z",
         "status": "investigating",
         "message": "Website is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-03-26T01:36:02.744Z",
+        "status": "resolved",
+        "message": "Website is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-03-26T01:36:02.744Z"
   },
   {
     "id": "inc-1772980699808",
