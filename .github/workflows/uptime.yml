@@ -2,7 +2,7 @@ name: Uptime CI
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
+    - cron: '*/15 * * * *'  # Every 15 minutes (reduced to avoid excessive Vercel builds)
   workflow_dispatch:  # Allow manual trigger
 
 permissions:

@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
+  "ignoreCommand": "git diff HEAD^ HEAD --quiet -- src/ public/ package.json next.config.js tailwind.config.js",
   "headers": [
     {
       "source": "/api/(.*)",
