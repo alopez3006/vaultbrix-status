@@ -12124,5 +12124,11 @@
     "status": "up",
     "code": 301,
     "responseTime": 424
+  },
+  {
+    "timestamp": "2026-03-31T12:22:16.170Z",
+    "status": "up",
+    "code": 301,
+    "responseTime": 570
   }
 ]
