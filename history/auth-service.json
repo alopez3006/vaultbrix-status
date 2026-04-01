@@ -12358,5 +12358,11 @@
     "status": "up",
     "code": 401,
     "responseTime": 494
+  },
+  {
+    "timestamp": "2026-04-01T10:36:44.004Z",
+    "status": "up",
+    "code": 401,
+    "responseTime": 422
   }
 ]
