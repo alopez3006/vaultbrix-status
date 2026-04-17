@@ -16720,5 +16720,11 @@
     "status": "up",
     "code": 401,
     "responseTime": 484
+  },
+  {
+    "timestamp": "2026-04-17T17:32:59.694Z",
+    "status": "down",
+    "code": 0,
+    "responseTime": 10000
   }
 ]
