@@ -1,5 +1,20 @@
 [
   {
+    "id": "inc-1776718038946",
+    "title": "Auth Service is experiencing issues",
+    "service": "Auth Service",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-04-20T20:47:18.946Z",
+    "updates": [
+      {
+        "timestamp": "2026-04-20T20:47:18.946Z",
+        "status": "investigating",
+        "message": "Auth Service is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
     "id": "inc-1776617537930",
     "title": "Dashboard is experiencing issues",
     "service": "Dashboard",
