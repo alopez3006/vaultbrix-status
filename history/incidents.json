@@ -3,7 +3,7 @@
     "id": "inc-1776718038946",
     "title": "Auth Service is experiencing issues",
     "service": "Auth Service",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-04-20T20:47:18.946Z",
     "updates": [
@@ -11,8 +11,14 @@
         "timestamp": "2026-04-20T20:47:18.946Z",
         "status": "investigating",
         "message": "Auth Service is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-04-20T21:19:02.017Z",
+        "status": "resolved",
+        "message": "Auth Service is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-04-20T21:19:02.017Z"
   },
   {
     "id": "inc-1776617537930",
