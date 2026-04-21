@@ -17680,5 +17680,11 @@
     "status": "up",
     "code": 301,
     "responseTime": 708
+  },
+  {
+    "timestamp": "2026-04-21T09:55:33.782Z",
+    "status": "up",
+    "code": 301,
+    "responseTime": 411
   }
 ]
