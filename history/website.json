@@ -18388,5 +18388,11 @@
     "status": "up",
     "code": 301,
     "responseTime": 667
+  },
+  {
+    "timestamp": "2026-04-24T13:34:49.875Z",
+    "status": "up",
+    "code": 301,
+    "responseTime": 502
   }
 ]
