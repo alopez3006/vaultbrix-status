@@ -21280,5 +21280,11 @@
     "status": "up",
     "code": 401,
     "responseTime": 1314
+  },
+  {
+    "timestamp": "2026-05-08T10:12:23.800Z",
+    "status": "up",
+    "code": 401,
+    "responseTime": 496
   }
 ]
