@@ -22756,5 +22756,11 @@
     "status": "up",
     "code": 301,
     "responseTime": 500
+  },
+  {
+    "timestamp": "2026-05-20T11:10:39.921Z",
+    "status": "up",
+    "code": 301,
+    "responseTime": 659
   }
 ]
