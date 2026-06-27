@@ -28306,5 +28306,11 @@
     "status": "up",
     "code": 301,
     "responseTime": 648
+  },
+  {
+    "timestamp": "2026-06-27T16:11:06.184Z",
+    "status": "up",
+    "code": 301,
+    "responseTime": 422
   }
 ]
