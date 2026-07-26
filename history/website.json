@@ -33778,5 +33778,11 @@
     "status": "up",
     "code": 301,
     "responseTime": 702
+  },
+  {
+    "timestamp": "2026-07-26T07:22:47.088Z",
+    "status": "up",
+    "code": 301,
+    "responseTime": 410
   }
 ]
