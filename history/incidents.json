@@ -1,5 +1,20 @@
 [
   {
+    "id": "inc-1787573387596",
+    "title": "API is experiencing issues",
+    "service": "API",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-08-24T12:09:47.596Z",
+    "updates": [
+      {
+        "timestamp": "2026-08-24T12:09:47.596Z",
+        "status": "investigating",
+        "message": "API is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
     "id": "inc-1778017111823",
     "title": "Auth Service is experiencing issues",
     "service": "Auth Service",
