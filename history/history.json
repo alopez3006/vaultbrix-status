@@ -1,12 +1,6 @@
 {
   "api": [
     {
-      "timestamp": "2026-08-24T11:24:19.488Z",
-      "status": "up",
-      "code": 200,
-      "responseTime": 851
-    },
-    {
       "timestamp": "2026-08-24T11:40:52.078Z",
       "status": "up",
       "code": 200,
@@ -1727,15 +1721,15 @@
       "status": "up",
       "code": 200,
       "responseTime": 519
+    },
+    {
+      "timestamp": "2026-08-30T05:09:19.227Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 734
     }
   ],
   "dashboard": [
-    {
-      "timestamp": "2026-08-24T11:24:20.173Z",
-      "status": "up",
-      "code": 307,
-      "responseTime": 663
-    },
     {
       "timestamp": "2026-08-24T11:40:52.703Z",
       "status": "up",
@@ -3457,15 +3451,15 @@
       "status": "up",
       "code": 307,
       "responseTime": 578
+    },
+    {
+      "timestamp": "2026-08-30T05:09:20.574Z",
+      "status": "up",
+      "code": 307,
+      "responseTime": 1324
     }
   ],
   "website": [
-    {
-      "timestamp": "2026-08-24T11:24:20.842Z",
-      "status": "up",
-      "code": 301,
-      "responseTime": 655
-    },
     {
       "timestamp": "2026-08-24T11:40:53.326Z",
       "status": "up",
@@ -5187,15 +5181,15 @@
       "status": "up",
       "code": 301,
       "responseTime": 517
+    },
+    {
+      "timestamp": "2026-08-30T05:09:21.847Z",
+      "status": "up",
+      "code": 301,
+      "responseTime": 1258
     }
   ],
   "auth-service": [
-    {
-      "timestamp": "2026-08-24T11:24:21.526Z",
-      "status": "up",
-      "code": 401,
-      "responseTime": 672
-    },
     {
       "timestamp": "2026-08-24T11:40:53.962Z",
       "status": "up",
@@ -6917,6 +6911,12 @@
       "status": "up",
       "code": 401,
       "responseTime": 442
+    },
+    {
+      "timestamp": "2026-08-30T05:09:22.497Z",
+      "status": "up",
+      "code": 401,
+      "responseTime": 638
     }
   ],
   "incidents": [
