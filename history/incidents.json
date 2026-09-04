@@ -3,7 +3,7 @@
     "id": "inc-1788507121168",
     "title": "Dashboard is experiencing issues",
     "service": "Dashboard",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-09-04T07:32:01.168Z",
     "updates": [
@@ -11,8 +11,14 @@
         "timestamp": "2026-09-04T07:32:01.168Z",
         "status": "investigating",
         "message": "Dashboard is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-09-04T07:45:46.586Z",
+        "status": "resolved",
+        "message": "Dashboard is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-09-04T07:45:46.586Z"
   },
   {
     "id": "inc-1788277270582",
