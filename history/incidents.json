@@ -3,7 +3,7 @@
     "id": "inc-1788508147087",
     "title": "Website is experiencing issues",
     "service": "Website",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-09-04T07:49:07.087Z",
     "updates": [
@@ -11,14 +11,20 @@
         "timestamp": "2026-09-04T07:49:07.087Z",
         "status": "investigating",
         "message": "Website is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-09-04T08:20:56.028Z",
+        "status": "resolved",
+        "message": "Website is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-09-04T08:20:56.028Z"
   },
   {
     "id": "inc-1788508137060",
     "title": "Dashboard is experiencing issues",
     "service": "Dashboard",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-09-04T07:48:57.060Z",
     "updates": [
@@ -26,8 +32,14 @@
         "timestamp": "2026-09-04T07:48:57.060Z",
         "status": "investigating",
         "message": "Dashboard is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-09-04T08:20:55.551Z",
+        "status": "resolved",
+        "message": "Dashboard is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-09-04T08:20:55.551Z"
   },
   {
     "id": "inc-1788507121168",
