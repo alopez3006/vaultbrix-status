@@ -3,7 +3,7 @@
     "id": "inc-1789593871509",
     "title": "Auth Service is experiencing issues",
     "service": "Auth Service",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-09-16T21:24:31.509Z",
     "updates": [
@@ -11,14 +11,20 @@
         "timestamp": "2026-09-16T21:24:31.509Z",
         "status": "investigating",
         "message": "Auth Service is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-09-16T21:34:59.182Z",
+        "status": "resolved",
+        "message": "Auth Service is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-09-16T21:34:59.182Z"
   },
   {
     "id": "inc-1789593861483",
     "title": "Website is experiencing issues",
     "service": "Website",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-09-16T21:24:21.483Z",
     "updates": [
@@ -26,14 +32,20 @@
         "timestamp": "2026-09-16T21:24:21.483Z",
         "status": "investigating",
         "message": "Website is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-09-16T21:34:58.791Z",
+        "status": "resolved",
+        "message": "Website is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-09-16T21:34:58.791Z"
   },
   {
     "id": "inc-1789593851458",
     "title": "Dashboard is experiencing issues",
     "service": "Dashboard",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-09-16T21:24:11.458Z",
     "updates": [
@@ -41,14 +53,20 @@
         "timestamp": "2026-09-16T21:24:11.458Z",
         "status": "investigating",
         "message": "Dashboard is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-09-16T21:34:58.334Z",
+        "status": "resolved",
+        "message": "Dashboard is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-09-16T21:34:58.334Z"
   },
   {
     "id": "inc-1789593841425",
     "title": "API is experiencing issues",
     "service": "API",
-    "status": "investigating",
+    "status": "resolved",
     "severity": "major",
     "createdAt": "2026-09-16T21:24:01.425Z",
     "updates": [
@@ -56,8 +74,14 @@
         "timestamp": "2026-09-16T21:24:01.425Z",
         "status": "investigating",
         "message": "API is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-09-16T21:34:57.830Z",
+        "status": "resolved",
+        "message": "API is back online and operating normally."
       }
-    ]
+    ],
+    "resolvedAt": "2026-09-16T21:34:57.830Z"
   },
   {
     "id": "inc-1789083276722",
