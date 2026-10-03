@@ -1,5 +1,50 @@
 [
   {
+    "id": "inc-1791067027851",
+    "title": "Auth Service is experiencing issues",
+    "service": "Auth Service",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-10-03T22:37:07.851Z",
+    "updates": [
+      {
+        "timestamp": "2026-10-03T22:37:07.851Z",
+        "status": "investigating",
+        "message": "Auth Service is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
+    "id": "inc-1791067026411",
+    "title": "Dashboard is experiencing issues",
+    "service": "Dashboard",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-10-03T22:37:06.411Z",
+    "updates": [
+      {
+        "timestamp": "2026-10-03T22:37:06.411Z",
+        "status": "investigating",
+        "message": "Dashboard is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
+    "id": "inc-1791067025682",
+    "title": "API is experiencing issues",
+    "service": "API",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-10-03T22:37:05.682Z",
+    "updates": [
+      {
+        "timestamp": "2026-10-03T22:37:05.682Z",
+        "status": "investigating",
+        "message": "API is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
     "id": "inc-1789593871509",
     "title": "Auth Service is experiencing issues",
     "service": "Auth Service",
@@ -985,68 +1030,5 @@
       }
     ],
     "resolvedAt": "2026-02-16T19:54:09.518Z"
-  },
-  {
-    "id": "inc-1771255397430",
-    "title": "Website is experiencing issues",
-    "service": "Website",
-    "status": "resolved",
-    "severity": "major",
-    "createdAt": "2026-02-16T15:23:17.430Z",
-    "updates": [
-      {
-        "timestamp": "2026-02-16T15:23:17.430Z",
-        "status": "investigating",
-        "message": "Website is not responding as expected. Our team is investigating."
-      },
-      {
-        "timestamp": "2026-02-16T16:06:15.551Z",
-        "status": "resolved",
-        "message": "Website is back online and operating normally."
-      }
-    ],
-    "resolvedAt": "2026-02-16T16:06:15.551Z"
-  },
-  {
-    "id": "inc-1771191769030",
-    "title": "Brief API interruption during scheduled deployment",
-    "service": "API",
-    "status": "resolved",
-    "severity": "minor",
-    "createdAt": "2026-02-15T23:53:00.000Z",
-    "updates": [
-      {
-        "timestamp": "2026-02-15T23:53:00.000Z",
-        "status": "identified",
-        "message": "Brief interruption (~10 seconds) during control-plane deployment. Some requests received 502 responses."
-      },
-      {
-        "timestamp": "2026-02-15T23:53:10.000Z",
-        "status": "resolved",
-        "message": "Deployment completed successfully. All services operational."
-      }
-    ],
-    "resolvedAt": "2026-02-15T23:53:10.000Z"
-  },
-  {
-    "id": "inc-1771173675026",
-    "title": "Website is experiencing issues",
-    "service": "Website",
-    "status": "resolved",
-    "severity": "major",
-    "createdAt": "2026-02-15T16:41:15.026Z",
-    "updates": [
-      {
-        "timestamp": "2026-02-15T16:41:15.026Z",
-        "status": "investigating",
-        "message": "Website is not responding as expected. Our team is investigating."
-      },
-      {
-        "timestamp": "2026-02-15T17:04:20.962Z",
-        "status": "resolved",
-        "message": "Website is back online and operating normally."
-      }
-    ],
-    "resolvedAt": "2026-02-15T17:04:20.962Z"
   }
 ]
