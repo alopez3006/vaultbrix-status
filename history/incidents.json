@@ -3,7 +3,7 @@
     "id": "inc-1791067027851",
     "title": "Auth Service is experiencing issues",
     "service": "Auth Service",
-    "status": "investigating",
+    "status": "monitoring",
     "severity": "major",
     "createdAt": "2026-10-03T22:37:07.851Z",
     "updates": [
@@ -11,6 +11,11 @@
         "timestamp": "2026-10-03T22:37:07.851Z",
         "status": "investigating",
         "message": "Auth Service is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-10-03T23:38:05.010Z",
+        "status": "monitoring",
+        "message": "Still monitoring. Response time: 662ms"
       }
     ]
   },
@@ -18,7 +23,7 @@
     "id": "inc-1791067026411",
     "title": "Dashboard is experiencing issues",
     "service": "Dashboard",
-    "status": "investigating",
+    "status": "monitoring",
     "severity": "major",
     "createdAt": "2026-10-03T22:37:06.411Z",
     "updates": [
@@ -26,6 +31,11 @@
         "timestamp": "2026-10-03T22:37:06.411Z",
         "status": "investigating",
         "message": "Dashboard is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-10-03T23:38:03.778Z",
+        "status": "monitoring",
+        "message": "Still monitoring. Response time: 1057ms"
       }
     ]
   },
@@ -33,7 +43,7 @@
     "id": "inc-1791067025682",
     "title": "API is experiencing issues",
     "service": "API",
-    "status": "investigating",
+    "status": "monitoring",
     "severity": "major",
     "createdAt": "2026-10-03T22:37:05.682Z",
     "updates": [
@@ -41,6 +51,11 @@
         "timestamp": "2026-10-03T22:37:05.682Z",
         "status": "investigating",
         "message": "API is not responding as expected. Our team is investigating."
+      },
+      {
+        "timestamp": "2026-10-03T23:38:02.702Z",
+        "status": "monitoring",
+        "message": "Still monitoring. Response time: 803ms"
       }
     ]
   },
