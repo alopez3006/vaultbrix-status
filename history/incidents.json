@@ -236,6 +236,11 @@
         "timestamp": "2026-10-05T16:52:25.600Z",
         "status": "monitoring",
         "message": "Still monitoring. Response time: 449ms"
+      },
+      {
+        "timestamp": "2026-10-05T17:25:32.728Z",
+        "status": "monitoring",
+        "message": "Still monitoring. Response time: 600ms"
       }
     ]
   },
@@ -476,6 +481,11 @@
         "timestamp": "2026-10-05T16:52:24.665Z",
         "status": "monitoring",
         "message": "Still monitoring. Response time: 451ms"
+      },
+      {
+        "timestamp": "2026-10-05T17:25:31.428Z",
+        "status": "monitoring",
+        "message": "Still monitoring. Response time: 625ms"
       }
     ]
   },
@@ -716,6 +726,11 @@
         "timestamp": "2026-10-05T16:52:24.198Z",
         "status": "monitoring",
         "message": "Still monitoring. Response time: 428ms"
+      },
+      {
+        "timestamp": "2026-10-05T17:25:30.784Z",
+        "status": "monitoring",
+        "message": "Still monitoring. Response time: 678ms"
       }
     ]
   },
