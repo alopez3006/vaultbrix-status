@@ -71116,5 +71116,11 @@
     "status": "up",
     "code": 200,
     "responseTime": 1194
+  },
+  {
+    "timestamp": "2026-10-25T17:48:01.300Z",
+    "status": "up",
+    "code": 200,
+    "responseTime": 400
   }
 ]
