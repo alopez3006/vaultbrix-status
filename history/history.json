@@ -1,12 +1,6 @@
 {
   "api": [
     {
-      "timestamp": "2026-11-06T15:17:35.896Z",
-      "status": "down",
-      "code": 403,
-      "responseTime": 545
-    },
-    {
       "timestamp": "2026-11-06T15:33:23.365Z",
       "status": "down",
       "code": 403,
@@ -1727,15 +1721,15 @@
       "status": "down",
       "code": 403,
       "responseTime": 746
+    },
+    {
+      "timestamp": "2026-11-09T16:47:46.382Z",
+      "status": "down",
+      "code": 403,
+      "responseTime": 683
     }
   ],
   "dashboard": [
-    {
-      "timestamp": "2026-11-06T15:17:36.440Z",
-      "status": "down",
-      "code": 403,
-      "responseTime": 519
-    },
     {
       "timestamp": "2026-11-06T15:33:23.805Z",
       "status": "down",
@@ -3457,15 +3451,15 @@
       "status": "down",
       "code": 403,
       "responseTime": 802
+    },
+    {
+      "timestamp": "2026-11-09T16:47:47.065Z",
+      "status": "down",
+      "code": 403,
+      "responseTime": 640
     }
   ],
   "website": [
-    {
-      "timestamp": "2026-11-06T15:17:36.973Z",
-      "status": "up",
-      "code": 200,
-      "responseTime": 516
-    },
     {
       "timestamp": "2026-11-06T15:33:24.240Z",
       "status": "up",
@@ -5187,15 +5181,15 @@
       "status": "up",
       "code": 200,
       "responseTime": 666
+    },
+    {
+      "timestamp": "2026-11-09T16:47:47.607Z",
+      "status": "up",
+      "code": 200,
+      "responseTime": 514
     }
   ],
   "auth-service": [
-    {
-      "timestamp": "2026-11-06T15:17:37.452Z",
-      "status": "down",
-      "code": 403,
-      "responseTime": 464
-    },
     {
       "timestamp": "2026-11-06T15:33:24.638Z",
       "status": "down",
@@ -6917,6 +6911,12 @@
       "status": "down",
       "code": 403,
       "responseTime": 637
+    },
+    {
+      "timestamp": "2026-11-09T16:47:48.168Z",
+      "status": "down",
+      "code": 403,
+      "responseTime": 535
     }
   ],
   "incidents": [
@@ -13337,6 +13337,11 @@
           "timestamp": "2026-11-09T16:07:18.873Z",
           "status": "monitoring",
           "message": "Still monitoring. Response time: 491ms"
+        },
+        {
+          "timestamp": "2026-11-09T16:47:48.184Z",
+          "status": "monitoring",
+          "message": "Still monitoring. Response time: 535ms"
         }
       ]
     },
@@ -19757,6 +19762,11 @@
           "timestamp": "2026-11-09T16:07:17.825Z",
           "status": "monitoring",
           "message": "Still monitoring. Response time: 668ms"
+        },
+        {
+          "timestamp": "2026-11-09T16:47:47.082Z",
+          "status": "monitoring",
+          "message": "Still monitoring. Response time: 640ms"
         }
       ]
     },
@@ -26182,6 +26192,11 @@
           "timestamp": "2026-11-09T16:07:17.141Z",
           "status": "monitoring",
           "message": "Still monitoring. Response time: 576ms"
+        },
+        {
+          "timestamp": "2026-11-09T16:47:46.414Z",
+          "status": "monitoring",
+          "message": "Still monitoring. Response time: 683ms"
         }
       ]
     },
