@@ -1,5 +1,20 @@
 [
   {
+    "id": "inc-1795072767187",
+    "title": "Website is experiencing issues",
+    "service": "Website",
+    "status": "investigating",
+    "severity": "major",
+    "createdAt": "2026-11-19T07:19:27.187Z",
+    "updates": [
+      {
+        "timestamp": "2026-11-19T07:19:27.187Z",
+        "status": "investigating",
+        "message": "Website is not responding as expected. Our team is investigating."
+      }
+    ]
+  },
+  {
     "id": "inc-1791067027851",
     "title": "Auth Service is experiencing issues",
     "service": "Auth Service",
@@ -25404,26 +25419,5 @@
       }
     ],
     "resolvedAt": "2026-02-27T21:01:40.693Z"
-  },
-  {
-    "id": "inc-1771269827456",
-    "title": "Website is experiencing issues",
-    "service": "Website",
-    "status": "resolved",
-    "severity": "major",
-    "createdAt": "2026-02-16T19:23:47.456Z",
-    "updates": [
-      {
-        "timestamp": "2026-02-16T19:23:47.456Z",
-        "status": "investigating",
-        "message": "Website is not responding as expected. Our team is investigating."
-      },
-      {
-        "timestamp": "2026-02-16T19:54:09.518Z",
-        "status": "resolved",
-        "message": "Website is back online and operating normally."
-      }
-    ],
-    "resolvedAt": "2026-02-16T19:54:09.518Z"
   }
 ]
