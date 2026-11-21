@@ -85756,5 +85756,11 @@
     "status": "up",
     "code": 200,
     "responseTime": 410
+  },
+  {
+    "timestamp": "2026-11-21T09:47:36.955Z",
+    "status": "up",
+    "code": 200,
+    "responseTime": 404
   }
 ]
