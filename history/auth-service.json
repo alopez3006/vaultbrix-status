@@ -85780,5 +85780,11 @@
     "status": "down",
     "code": 403,
     "responseTime": 407
+  },
+  {
+    "timestamp": "2026-11-21T10:47:45.488Z",
+    "status": "down",
+    "code": 403,
+    "responseTime": 644
   }
 ]
