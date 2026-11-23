@@ -86830,5 +86830,11 @@
     "status": "down",
     "code": 403,
     "responseTime": 474
+  },
+  {
+    "timestamp": "2026-11-23T08:36:33.171Z",
+    "status": "down",
+    "code": 403,
+    "responseTime": 413
   }
 ]
