@@ -88510,5 +88510,11 @@
     "status": "down",
     "code": 403,
     "responseTime": 370
+  },
+  {
+    "timestamp": "2026-11-26T08:08:38.665Z",
+    "status": "down",
+    "code": 403,
+    "responseTime": 597
   }
 ]
