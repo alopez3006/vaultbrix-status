@@ -89188,5 +89188,11 @@
     "status": "down",
     "code": 403,
     "responseTime": 812
+  },
+  {
+    "timestamp": "2026-11-27T12:47:45.629Z",
+    "status": "down",
+    "code": 403,
+    "responseTime": 437
   }
 ]
