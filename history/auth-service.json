@@ -89272,5 +89272,11 @@
     "status": "down",
     "code": 403,
     "responseTime": 1094
+  },
+  {
+    "timestamp": "2026-11-27T15:47:43.411Z",
+    "status": "down",
+    "code": 403,
+    "responseTime": 526
   }
 ]
